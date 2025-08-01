@@ -3,6 +3,7 @@ import { CompanyStorySection } from "./company/CompanyStorySection";
 import { CompanyTechnologySection } from "./company/CompanyTechnologySection";
 import { CompanyTeamSection } from "./company/CompanyTeamSection";
 import { CompanyCTASection } from "./company/CompanyCTASection";
+import { FinalCTASection } from "./FinalCTASection";
 
 export function CompanyPage() {
   return (
@@ -11,6 +12,7 @@ export function CompanyPage() {
       {/* <CompanyTechnologySection /> */}
       <CompanyTeamSection />
       <CompanyCTASection />
+      <FinalCTASection />
       <Footer />
     </div>
   );
