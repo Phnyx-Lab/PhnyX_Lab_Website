@@ -260,7 +260,7 @@ export function CompanyTechnologySection() {
 				</div>
 
 				{/* Simple CTA Section */}
-				<div className="text-center">
+				{/* <div className="text-center">
 					<div className="bg-gray-900 p-12 md:p-16 rounded-xl text-white">
 						<div className="max-w-4xl mx-auto">
 							<h3 className="text-3xl md:text-4xl font-bold mb-6 tracking-title">
@@ -283,7 +283,7 @@ export function CompanyTechnologySection() {
 							</Button>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

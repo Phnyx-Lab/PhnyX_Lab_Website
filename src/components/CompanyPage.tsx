@@ -9,7 +9,7 @@ export function CompanyPage() {
       {/* <CompanyStorySection /> */}
       {/* <CompanyTechnologySection /> */}
       <CompanyTeamSection />
-      <CompanyCTASection />
+      {/* <CompanyCTASection /> */}
       <FinalCTASection />
       <Footer />
     </div>

@@ -74,16 +74,13 @@ export function CompanyTeamSection() {
 				{/* Header */}
 				<div className="mb-20 text-center">
 					<h2 className="mb-8 text-4xl font-bold text-black md:text-6xl lg:text-7xl xl:text-8xl tracking-hero leading-hero">
-						The Minds Behind
-						<br />
-						<span className="text-gray-600">the Mission</span>
+					Our Mission
 					</h2>
 
 					<p className="mx-auto max-w-4xl text-xl text-gray-600 md:text-2xl tracking-body leading-body font-condensed">
-						We are a team of world-class engineers, scientists, and business
-						leaders united by a single vision:{" "}
+					To transform the knowledge layer of pharma—automating the most complex, {' '}
 						<span className="font-semibold text-gray-900">
-							transforming how the world's most critical work gets done.
+							overlooked workflows with GenAI.
 						</span>
 					</p>
 				</div>
@@ -182,7 +179,7 @@ export function CompanyTeamSection() {
 				</div> */}
 
 				{/* Our Hubs Section - No Role Badges */}
-				<div className="mb-20">
+				<div className="my-40">
 					<div className="mb-16 text-center">
 						<h3 className="mb-6 text-3xl font-bold text-black md:text-4xl lg:text-5xl tracking-title leading-title">
 							Our <span className="text-red-600">Hubs</span>
