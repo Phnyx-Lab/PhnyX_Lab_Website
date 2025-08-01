@@ -281,7 +281,6 @@ export function HeroSection() {
 									href="https://cheiron.phnyx.ai"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="ml-3"
 								>
 									Try Cheiron
 								</a>
