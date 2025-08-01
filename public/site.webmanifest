@@ -1,0 +1,26 @@
+{
+	"name": "PhnyX Lab - AI Toolkit for Modern Biopharma",
+	"short_name": "PhnyX Lab",
+	"description": "Leading biopharma AI platform transforming pharmaceutical workflows with intelligent document automation, AI-powered literature review, and regulatory writing tools.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#dc2626",
+	"icons": [
+		{
+			"src": "/favicon-16x16.png",
+			"sizes": "16x16",
+			"type": "image/png"
+		},
+		{
+			"src": "/favicon-32x32.png",
+			"sizes": "32x32",
+			"type": "image/png"
+		},
+		{
+			"src": "/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png"
+		}
+	]
+}
