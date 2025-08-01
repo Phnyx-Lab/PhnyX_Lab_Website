@@ -202,7 +202,7 @@ export function HeroSection() {
 								}}
 							>
 								{index === titleWords.length - 1 ? (
-									<span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-300">
+									<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] via-[#DCDCDC] to-[#716d6d]">
 										{word}
 									</span>
 								) : (
