@@ -295,7 +295,7 @@ export function HeroSection() {
 						animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
 						transition={{ duration: 0.8, delay: 3.6 }}
 					>
-						{[
+						{/* {[
 							{ number: "92.2", suffix: "%", label: "Fact Accuracy" },
 							{ number: "81.5", suffix: "%", label: "Source Credibility" },
 							{ number: "98.7", suffix: "%", label: "Traceability" },
@@ -324,7 +324,7 @@ export function HeroSection() {
 									{stat.label}
 								</div>
 							</motion.div>
-						))}
+						))} */}
 					</motion.div>
 				</div>
 			</motion.div>
