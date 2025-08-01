@@ -4,11 +4,10 @@
   
   # Output directory (Vite builds to 'dist')
   publish = "dist"
-  
-  # Node.js version
-  environment = { NODE_VERSION = "18" }
 
 [build.environment]
+  # Node.js version
+  NODE_VERSION = "18"
   # Disable Next.js telemetry (not needed for Vite)
   NEXT_TELEMETRY_DISABLED = "1"
 
