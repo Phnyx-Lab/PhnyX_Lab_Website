@@ -1,23 +1,23 @@
 import { useState, useEffect } from "react";
-import { Navigation } from "./src/components/Navigation";
-import { HeroSection } from "./src/components/HeroSection";
-import { SocialProofSection } from "./src/components/SocialProofSection";
-import { ProblemSolutionSection } from "./src/components/ProblemSolutionSection";
-import { PerformanceSection } from "./src/components/PerformanceSection";
-import { TestimonialsSection } from "./src/components/TestimonialsSection";
-import { FinalCTASection } from "./src/components/FinalCTASection";
-import { Footer } from "./src/components/Footer";
-import { ProductsPage } from "./src/components/ProductsPage";
-import { CompanyPage } from "./src/components/CompanyPage";
-import { NewsroomPage } from "./src/components/NewsroomPage";
-import { RequestDemoPage } from "./src/components/RequestDemoPage";
-import { ThankYouPage } from "./src/components/ThankYouPage";
-import { SEOHead } from "./src/components/SEOHead";
-import { Analytics, trackPageView } from "./src/components/Analytics";
+import { Navigation } from "./components/Navigation";
+import { HeroSection } from "./components/HeroSection";
+import { SocialProofSection } from "./components/SocialProofSection";
+import { ProblemSolutionSection } from "./components/ProblemSolutionSection";
+import { PerformanceSection } from "./components/PerformanceSection";
+import { TestimonialsSection } from "./components/TestimonialsSection";
+import { FinalCTASection } from "./components/FinalCTASection";
+import { Footer } from "./components/Footer";
+import { ProductsPage } from "./components/ProductsPage";
+import { CompanyPage } from "./components/CompanyPage";
+import { NewsroomPage } from "./components/NewsroomPage";
+import { RequestDemoPage } from "./components/RequestDemoPage";
+import { ThankYouPage } from "./components/ThankYouPage";
+import { SEOHead } from "./components/SEOHead";
+import { Analytics, trackPageView } from "./components/Analytics";
 import {
 	getOrganizationStructuredData,
 	getCheironStructuredData,
-} from "./src/components/StructuredData";
+} from "./components/StructuredData";
 import {
 	initializePerformanceMonitoring,
 	PerformanceMonitor,
@@ -149,28 +149,28 @@ export default function App() {
 				return <ThankYouPage />;
 			default:
 				return (
-					<div className="min-h-screen bg-gradient-to-br from-white via-gray-50/30 to-white">
+					<div className="min-h-screen bg-gradient-to-br from-white to-white via-gray-50/30">
 						<HeroSection />
-						<div className="bg-gradient-to-br from-white to-gray-50/50 relative overflow-hidden">
+						<div className="overflow-hidden relative bg-gradient-to-br from-white to-gray-50/50">
 							<div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(206,14,45,0.03)_0%,transparent_50%)]"></div>
 							<div className="relative z-10">
 								<SocialProofSection />
 							</div>
 						</div>
-						<div className="bg-gradient-to-br from-gray-50/50 via-white to-gray-50/80 border-t border-gray-100/50 relative overflow-hidden">
+						<div className="overflow-hidden relative bg-gradient-to-br via-white border-t from-gray-50/50 to-gray-50/80 border-gray-100/50">
 							<div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(239,68,68,0.04)_0%,transparent_40%)]"></div>
 							<div className="absolute inset-0 bg-[conic-gradient(from_180deg_at_50%_50%,transparent_0deg,rgba(206,14,45,0.02)_120deg,transparent_240deg)]"></div>
 							<div className="relative z-10">
 								<ProblemSolutionSection />
 							</div>
 						</div>
-						<div className="bg-gradient-to-br from-white via-gray-50/30 to-white border-t border-gray-100/50 relative overflow-hidden">
+						<div className="overflow-hidden relative bg-gradient-to-br from-white to-white border-t via-gray-50/30 border-gray-100/50">
 							<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(245,101,101,0.03)_0%,transparent_50%)]"></div>
 							<div className="relative z-10">
 								<PerformanceSection />
 							</div>
 						</div>
-						<div className="bg-gradient-to-br from-gray-50/80 via-white to-gray-50/40 border-t border-gray-100/50 relative overflow-hidden">
+						<div className="overflow-hidden relative bg-gradient-to-br via-white border-t from-gray-50/80 to-gray-50/40 border-gray-100/50">
 							<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,rgba(206,14,45,0.02)_0%,transparent_60%)]"></div>
 							<div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_30%,rgba(239,68,68,0.01)_50%,transparent_70%)]"></div>
 							<div className="relative z-10">
