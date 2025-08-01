@@ -10,6 +10,7 @@ import {
 import { useEffect, useState, useRef } from "react";
 
 // Counter component for animating numbers
+// @ts-ignore - Function is used in JSX below
 function AnimatedCounter({
 	value,
 	suffix = "",
@@ -202,7 +203,7 @@ export function HeroSection() {
 								}}
 							>
 								{index === titleWords.length - 1 ? (
-									<span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-300">
+									<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] via-[#DCDCDC] to-[#716d6d]">
 										{word}
 									</span>
 								) : (
@@ -270,12 +271,12 @@ export function HeroSection() {
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full backdrop-blur-sm border-white/60 bg-white/5 hover:bg-white/15 hover:border-white md:text-xl md:px-12 md:py-4 tracking-body"
 							>
-								<motion.span
+								{/* <motion.span
 									animate={{ opacity: [1, 0.7, 1] }}
 									transition={{ duration: 2, repeat: Infinity }}
 								>
 									▶
-								</motion.span>
+								</motion.span> */}
 								<a
 									href="https://cheiron.phnyx.ai"
 									target="_blank"
@@ -295,7 +296,7 @@ export function HeroSection() {
 						animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
 						transition={{ duration: 0.8, delay: 3.6 }}
 					>
-						{[
+						{/* {[
 							{ number: "92.2", suffix: "%", label: "Fact Accuracy" },
 							{ number: "81.5", suffix: "%", label: "Source Credibility" },
 							{ number: "98.7", suffix: "%", label: "Traceability" },
@@ -324,7 +325,7 @@ export function HeroSection() {
 									{stat.label}
 								</div>
 							</motion.div>
-						))}
+						))} */}
 					</motion.div>
 				</div>
 			</motion.div>

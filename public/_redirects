@@ -1,0 +1,8 @@
+# SPA routing - redirect all requests to index.html
+/*    /index.html   200
+
+# API routes (if any) - add specific rules here
+# /api/*  https://your-api-domain.com/api/:splat  200
+
+# Static assets - serve directly
+/assets/*  /assets/:splat  200

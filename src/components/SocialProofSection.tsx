@@ -68,11 +68,11 @@ export function SocialProofSection() {
                 className="group"
               >
                 <motion.div 
-                  className={`relative p-4 lg:p-6 rounded-lg md:rounded-xl ${partner.isSpecial ? 'bg-red-50 border-red-200' : 'bg-gray-100 border-gray-200'} hover:bg-white/80 transition-all duration-300 border hover:border-gray-300/50`}
+                 className={`relative p-4 lg:p-6 rounded-lg md:rounded-xl ${partner.isSpecial? 'bg-none border-none' : 'bg-gray-100 border-gray-200'} hover:bg-white/80 transition-all duration-300 border hover:border-gray-300/50`}
                   whileHover={{ scale: 1.02 }}
                 >
                   {partner.isSpecial ? (
-                    <div className="text-red-600 font-medium text-base lg:text-lg tracking-subtitle italic text-center py-3 lg:py-4">
+                    <div className="inline-flex w-[160px] h-[40px] px-6 py-2 justify-center items-center gap-2.5 rounded-full border border-white/40 bg-gradient-to-b from-white/30 via-white/20 to-white/10 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(0,0,0,0.12),inset_0_1px_0_0_rgba(255,255,255,0.4),inset_0_-1px_0_0_rgba(255,255,255,0.1)] text-[20px] font-semibold leading-7 text-[#111111] whitespace-nowrap">
                       {partner.name}
                     </div>
                   ) : (
