@@ -1,6 +1,4 @@
 import { Footer } from "./Footer";
-import { CompanyStorySection } from "./company/CompanyStorySection";
-import { CompanyTechnologySection } from "./company/CompanyTechnologySection";
 import { CompanyTeamSection } from "./company/CompanyTeamSection";
 import { CompanyCTASection } from "./company/CompanyCTASection";
 import { FinalCTASection } from "./FinalCTASection";
