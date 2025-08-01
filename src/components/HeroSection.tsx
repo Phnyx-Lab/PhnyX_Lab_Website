@@ -59,10 +59,6 @@ export function HeroSection() {
 		["0%", "-25%"],
 	);
 
-	const NavigateToCheiron = () => {
-		window.open("https://cheiron.phnyx.ai", "_blank");
-	};
-
 	// useEffect(() => {
 	//   const handleScroll = () => setScrollY(window.scrollY);
 	//   window.addEventListener("scroll", handleScroll);

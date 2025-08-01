@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getOptimizedImageUrl } from "../../utils/seo";
+import { getOptimizedImageUrl } from "../utils/seo";
 
 interface ImageOptimizedProps {
 	src: string;
