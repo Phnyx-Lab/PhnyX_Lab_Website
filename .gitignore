@@ -79,7 +79,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public  # Commented out for Vite project
 .history
 # Storybook build outputs
 .out
@@ -166,7 +166,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public  # Commented out for Vite project
 
 # Storybook build outputs
 .out
@@ -262,7 +262,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public  # Commented out for Vite project
 
 # Storybook build outputs
 .out
