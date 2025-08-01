@@ -146,7 +146,7 @@ export function CompanyTeamSection() {
 							</h3>
 							<p className="mb-8 text-xl text-gray-300 font-condensed tracking-body">
 								Our team combines world-class technical expertise with deep
-								industry knowledge. From Stanford PhD researchers to Olympiad
+								industry knowledge. From Stanford researchers to Olympiad
 								medalists, we attract individuals who share our passion for
 								solving humanity's most important challenges.
 							</p>
