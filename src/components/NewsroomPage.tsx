@@ -2,6 +2,7 @@ import { Footer } from "./Footer";
 import { ArrowRight, Calendar, Clock, Share, User } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { FinalCTASection } from "./FinalCTASection";
 
 export function NewsroomPage() {
   const featuredStory = {
@@ -186,7 +187,7 @@ export function NewsroomPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-spacing bg-white">
+      {/* <section className="section-spacing bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="bg-gray-900 p-12 md:p-16 rounded-xl text-white">
             <div className="max-w-4xl mx-auto text-center">
@@ -209,8 +210,9 @@ export function NewsroomPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
+      <FinalCTASection />
       <Footer />
     </div>
   );

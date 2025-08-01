@@ -143,7 +143,7 @@ export function CompanyTeamSection() {
 				</div>
 
 				{/* Team Culture */}
-				<div className="mb-20">
+				{/* <div className="mb-20">
 					<div className="p-12 text-white bg-gray-900 rounded-xl md:p-16">
 						<div className="mx-auto max-w-4xl">
 							<h3 className="mb-6 text-3xl font-bold md:text-4xl tracking-title">
@@ -179,7 +179,7 @@ export function CompanyTeamSection() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 
 				{/* Our Hubs Section - No Role Badges */}
 				<div className="mb-20">

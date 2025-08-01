@@ -3,6 +3,7 @@ import { CareersHeroSection } from "./careers/CareersHeroSection";
 import { CareersCultureSection } from "./careers/CareersCultureSection";
 import { CareersOpenPositionsSection } from "./careers/CareersOpenPositionsSection";
 import { CareersLocationsSection } from "./careers/CareersLocationsSection";
+import { FinalCTASection } from "./FinalCTASection";
 
 export function CareersPage() {
   return (
@@ -11,6 +12,7 @@ export function CareersPage() {
       <CareersCultureSection />
       <CareersOpenPositionsSection />
       <CareersLocationsSection />
+      <FinalCTASection />
       <Footer />
     </div>
   );
