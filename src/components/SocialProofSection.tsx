@@ -154,7 +154,7 @@ export function SocialProofSection() {
 
 	// Show only first 19 logos on desktop initially
 	const visiblePartners = showAllLogos ? partners : partners.slice(0, 19);
-	const remainingCount = partners.length - 19;
+	// const remainingCount = partners.length - 19;
 
 	return (
 		<section

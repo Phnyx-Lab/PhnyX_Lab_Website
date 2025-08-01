@@ -13,7 +13,7 @@ import {
 import {
 	Send,
 	Mail,
-	Phone,
+	// Phone,
 	Globe,
 	User,
 	Building2,
