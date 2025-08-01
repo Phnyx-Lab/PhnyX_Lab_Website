@@ -68,7 +68,7 @@ export function SocialProofSection() {
                 className="group"
               >
                 <motion.div 
-                  className={`relative p-4 lg:p-6 rounded-lg md:rounded-xl ${partner.isSpecial ? 'bg-red-50 border-red-200' : 'bg-gray-100 border-gray-200'} hover:bg-white/80 transition-all duration-300 border hover:border-gray-300/50`}
+                 className={`relative p-4 lg:p-6 rounded-lg md:rounded-xl ${partner.isSpecial? 'bg-none border-none' : 'bg-gray-100 border-gray-200'} hover:bg-white/80 transition-all duration-300 border hover:border-gray-300/50`}
                   whileHover={{ scale: 1.02 }}
                 >
                   {partner.isSpecial ? (

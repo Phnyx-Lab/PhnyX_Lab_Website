@@ -1,4 +1,4 @@
-import { Users, ExternalLink, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import LinkedinIcon from "@/src/assets/svg/LinkedinIcon";
 

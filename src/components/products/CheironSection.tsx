@@ -1,5 +1,5 @@
 import { Button } from "../ui/button";
-import { Brain, Search, Zap, ArrowRight, Play } from "lucide-react";
+import { Brain, Search, Zap, ArrowRight } from "lucide-react";
 
 export function CheironSection() {
 	return (

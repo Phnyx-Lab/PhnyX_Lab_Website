@@ -18,6 +18,7 @@ export function NewsletterSubscriptionSection() {
     }
   };
 
+  // TODO: Add a form to subscribe to the newsletter
   return (
     <section className="section-spacing-lg bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">

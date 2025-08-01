@@ -10,6 +10,7 @@ import {
 import { useEffect, useState, useRef } from "react";
 
 // Counter component for animating numbers
+// @ts-ignore - Function is used in JSX below
 function AnimatedCounter({
 	value,
 	suffix = "",

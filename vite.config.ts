@@ -5,6 +5,7 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/PhnyX_Lab_Website/', // GitHub Pages용 base URL
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./"),
