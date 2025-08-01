@@ -10,6 +10,7 @@ import {
 import { useEffect, useState, useRef } from "react";
 
 // Counter component for animating numbers
+// @ts-ignore - Function is used in JSX below
 function AnimatedCounter({
 	value,
 	suffix = "",
@@ -58,10 +59,6 @@ export function HeroSection() {
 		[0, 1],
 		["0%", "-25%"],
 	);
-
-	const NavigateToCheiron = () => {
-		window.open("https://cheiron.phnyx.ai", "_blank");
-	};
 
 	// useEffect(() => {
 	//   const handleScroll = () => setScrollY(window.scrollY);
@@ -139,7 +136,8 @@ export function HeroSection() {
 				</motion.div>
 
 				{/* Flowing Lines - Updated with red gradients */}
-				<svg
+				{/** biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+<svg
 					className="absolute inset-0 w-full h-full opacity-20"
 					viewBox="0 0 1000 1000"
 				>
@@ -206,7 +204,7 @@ export function HeroSection() {
 								}}
 							>
 								{index === titleWords.length - 1 ? (
-									<span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-200 to-red-300">
+									<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] via-[#DCDCDC] to-[#716d6d]">
 										{word}
 									</span>
 								) : (
@@ -221,6 +219,7 @@ export function HeroSection() {
 						<div className="text-lg text-gray-300 md:text-xl lg:text-2xl xl:text-3xl">
 							{subtitleWords.map((word, index) => (
 								<motion.span
+									// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 									key={index}
 									className="inline-block mr-1.5 md:mr-2"
 									initial={{ opacity: 0, y: 20 }}
@@ -255,6 +254,7 @@ export function HeroSection() {
 							<Button
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full border-2 shadow-2xl bg-brand-gradient hover:opacity-90 md:text-xl md:px-12 md:py-4 tracking-body border-white/20"
+								// biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
 								onClick={() => (window.location.hash = "request-demo")}
 							>
 								Request a Demo
@@ -274,17 +274,16 @@ export function HeroSection() {
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full backdrop-blur-sm border-white/60 bg-white/5 hover:bg-white/15 hover:border-white md:text-xl md:px-12 md:py-4 tracking-body"
 							>
-								<motion.span
+								{/* <motion.span
 									animate={{ opacity: [1, 0.7, 1] }}
 									transition={{ duration: 2, repeat: Infinity }}
 								>
 									▶
-								</motion.span>
+								</motion.span> */}
 								<a
 									href="https://cheiron.phnyx.ai"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="ml-3"
 								>
 									Try Cheiron
 								</a>
@@ -299,7 +298,7 @@ export function HeroSection() {
 						animate={{ opacity: isInView ? 1 : 0, y: isInView ? 0 : 40 }}
 						transition={{ duration: 0.8, delay: 3.6 }}
 					>
-						{[
+						{/* {[
 							{ number: "92.2", suffix: "%", label: "Fact Accuracy" },
 							{ number: "81.5", suffix: "%", label: "Source Credibility" },
 							{ number: "98.7", suffix: "%", label: "Traceability" },
@@ -328,7 +327,7 @@ export function HeroSection() {
 									{stat.label}
 								</div>
 							</motion.div>
-						))}
+						))} */}
 					</motion.div>
 				</div>
 			</motion.div>

@@ -13,7 +13,7 @@ import {
 import {
 	Send,
 	Mail,
-	Phone,
+	// Phone,
 	Globe,
 	User,
 	Building2,
@@ -144,17 +144,15 @@ export function RequestDemoForm() {
 				<div className="flex flex-wrap gap-6 mt-6 text-gray-600">
 					<div className="flex gap-2 items-center">
 						<Mail className="w-4 h-4 text-red-600" />
-						<span className="text-sm font-condensed">hello@phnyx.ai</span>
+						<span className="text-sm font-condensed">contact@phnyx.ai</span>
 					</div>
-					<div className="flex gap-2 items-center">
+					{/* <div className="flex gap-2 items-center">
 						<Phone className="w-4 h-4 text-red-600" />
 						<span className="text-sm font-condensed">+1 (650) 555-0123</span>
-					</div>
+					</div> */}
 					<div className="flex gap-2 items-center">
 						<Globe className="w-4 h-4 text-red-600" />
-						<span className="text-sm font-condensed">
-							San Francisco & Seoul
-						</span>
+						<span className="text-sm font-condensed">Palo Alto & Seoul</span>
 					</div>
 				</div>
 			</div>
