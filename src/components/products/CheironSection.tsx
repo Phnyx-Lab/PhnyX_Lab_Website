@@ -123,7 +123,9 @@ export function CheironSection() {
 					<Button
 						size="lg"
 						className="px-12 py-4 h-auto text-xl font-bold text-white bg-red-600 shadow-lg hover:bg-red-700 tracking-subtitle"
-						onClick={() => (window.location.hash = "request-demo")}
+						onClick={() => {
+							window.open("https://cheiron.phnyx.ai/", "_blank", "noopener");
+						}}
 					>
 						Try Cheiron Search
 						<ArrowRight className="ml-3 w-6 h-6" />
