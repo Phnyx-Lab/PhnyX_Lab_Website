@@ -395,11 +395,11 @@ export function ProblemSolutionSection() {
 						viewport={{ once: false, amount: 0.2 }}
 						style={{
 							aspectRatio: "16/9",
-							width: "95vw",
-							maxWidth: "none",
-							marginLeft: "calc(-47.5vw + 50%)",
-							marginRight: "calc(-47.5vw + 50%)",
-							transform: "scale(1.05)",
+							width: "80vw",
+							maxWidth: "1200px",
+							margin: "0 auto",
+							transform: "scale(1.02)",
+							marginBottom: "100px",
 						}}
 					>
 						<iframe
