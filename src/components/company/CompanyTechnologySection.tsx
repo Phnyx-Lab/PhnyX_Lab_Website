@@ -4,10 +4,8 @@ import {
 	Zap,
 	Shield,
 	Boxes,
-	ArrowRight,
 	CheckCircle,
 } from "lucide-react";
-import { Button } from "../ui/button";
 
 export function CompanyTechnologySection() {
 	const [activeTab, setActiveTab] = useState("scalability");

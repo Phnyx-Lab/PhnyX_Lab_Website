@@ -1,6 +1,5 @@
 import { Footer } from "./Footer";
 import { CompanyTeamSection } from "./company/CompanyTeamSection";
-import { CompanyCTASection } from "./company/CompanyCTASection";
 import { FinalCTASection } from "./FinalCTASection";
 
 export function CompanyPage() {
