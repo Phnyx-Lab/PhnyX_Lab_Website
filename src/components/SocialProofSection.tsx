@@ -1,6 +1,31 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
 
+// Import all company logo images
+import CompanyLogo0 from "../assets/images/CompanyLogo-0.png";
+import CompanyLogo1 from "../assets/images/CompanyLogo-1.png";
+import CompanyLogo3 from "../assets/images/CompanyLogo-3.png";
+import CompanyLogo4 from "../assets/images/CompanyLogo-4.png";
+import CompanyLogo5 from "../assets/images/CompanyLogo-5.png";
+import CompanyLogo6 from "../assets/images/CompanyLogo-6.png";
+import CompanyLogo7 from "../assets/images/CompanyLogo-7.png";
+import CompanyLogo8 from "../assets/images/CompanyLogo-8.png";
+import CompanyLogo9 from "../assets/images/CompanyLogo-9.png";
+import CompanyLogo10 from "../assets/images/CompanyLogo-10.png";
+import CompanyLogo11 from "../assets/images/CompanyLogo-11.png";
+import CompanyLogo12 from "../assets/images/CompanyLogo-12.png";
+import CompanyLogo13 from "../assets/images/CompanyLogo-13.png";
+import CompanyLogo14 from "../assets/images/CompanyLogo-14.png";
+import CompanyLogo15 from "../assets/images/CompanyLogo-15.png";
+import CompanyLogo16 from "../assets/images/CompanyLogo-16.png";
+import CompanyLogo17 from "../assets/images/CompanyLogo-17.png";
+import CompanyLogo18 from "../assets/images/CompanyLogo-18.png";
+import CompanyLogo19 from "../assets/images/CompanyLogo-19.png";
+import CompanyLogo20 from "../assets/images/CompanyLogo-20.png";
+import CompanyLogo21 from "../assets/images/CompanyLogo-21.png";
+import CompanyLogo22 from "../assets/images/CompanyLogo-22.png";
+import CompanyLogo23 from "../assets/images/CompanyLogo-23.png";
+
 export function SocialProofSection() {
 	const ref = useRef(null);
 	const [showAllLogos, setShowAllLogos] = useState(false);
@@ -16,145 +41,145 @@ export function SocialProofSection() {
 			id: "logo-0",
 			name: "Company Logo",
 			delay: 0,
-			logo: "/src/assets/images/CompanyLogo-0.png",
+			logo: CompanyLogo0,
 		},
 		{
 			id: "logo-1",
 			name: "Company Logo",
 			delay: 0.05,
-			logo: "/src/assets/images/CompanyLogo-1.png",
+			logo: CompanyLogo1,
 		},
 		{
 			id: "logo-3",
 			name: "Company Logo",
 			delay: 0.1,
-			logo: "/src/assets/images/CompanyLogo-3.png",
+			logo: CompanyLogo3,
 		},
 		{
 			id: "logo-4",
 			name: "Company Logo",
 			delay: 0.15,
-			logo: "/src/assets/images/CompanyLogo-4.png",
+			logo: CompanyLogo4,
 		},
 		{
 			id: "logo-5",
 			name: "Company Logo",
 			delay: 0.2,
-			logo: "/src/assets/images/CompanyLogo-5.png",
+			logo: CompanyLogo5,
 		},
 		{
 			id: "logo-6",
 			name: "Company Logo",
 			delay: 0.25,
-			logo: "/src/assets/images/CompanyLogo-6.png",
+			logo: CompanyLogo6,
 		},
 		{
 			id: "logo-7",
 			name: "Company Logo",
 			delay: 0.3,
-			logo: "/src/assets/images/CompanyLogo-7.png",
+			logo: CompanyLogo7,
 		},
 		{
 			id: "logo-8",
 			name: "Company Logo",
 			delay: 0.35,
-			logo: "/src/assets/images/CompanyLogo-8.png",
+			logo: CompanyLogo8,
 		},
 		{
 			id: "logo-9",
 			name: "Company Logo",
 			delay: 0.4,
-			logo: "/src/assets/images/CompanyLogo-9.png",
+			logo: CompanyLogo9,
 		},
 		{
 			id: "logo-10",
 			name: "Company Logo",
 			delay: 0.45,
-			logo: "/src/assets/images/CompanyLogo-10.png",
+			logo: CompanyLogo10,
 		},
 		{
 			id: "logo-11",
 			name: "Company Logo",
 			delay: 0.5,
-			logo: "/src/assets/images/CompanyLogo-11.png",
+			logo: CompanyLogo11,
 		},
 		{
 			id: "logo-12",
 			name: "Company Logo",
 			delay: 0.55,
-			logo: "/src/assets/images/CompanyLogo-12.png",
+			logo: CompanyLogo12,
 		},
 		{
 			id: "logo-13",
 			name: "Company Logo",
 			delay: 0.6,
-			logo: "/src/assets/images/CompanyLogo-13.png",
+			logo: CompanyLogo13,
 		},
 		{
 			id: "logo-14",
 			name: "Company Logo",
 			delay: 0.65,
-			logo: "/src/assets/images/CompanyLogo-14.png",
+			logo: CompanyLogo14,
 		},
 		{
 			id: "logo-15",
 			name: "Company Logo",
 			delay: 0.7,
-			logo: "/src/assets/images/CompanyLogo-15.png",
+			logo: CompanyLogo15,
 		},
 		{
 			id: "logo-16",
 			name: "Company Logo",
 			delay: 0.75,
-			logo: "/src/assets/images/CompanyLogo-16.png",
+			logo: CompanyLogo16,
 		},
 		{
 			id: "logo-17",
 			name: "Company Logo",
 			delay: 0.8,
-			logo: "/src/assets/images/CompanyLogo-17.png",
+			logo: CompanyLogo17,
 		},
 		{
 			id: "logo-18",
 			name: "Company Logo",
 			delay: 0.85,
-			logo: "/src/assets/images/CompanyLogo-18.png",
+			logo: CompanyLogo18,
 		},
 		{
 			id: "logo-19",
 			name: "Company Logo",
 			delay: 0.9,
-			logo: "/src/assets/images/CompanyLogo-19.png",
+			logo: CompanyLogo19,
 		},
 		{
 			id: "logo-20",
 			name: "Company Logo",
 			delay: 0.95,
-			logo: "/src/assets/images/CompanyLogo-20.png",
+			logo: CompanyLogo20,
 		},
 		{
 			id: "logo-21",
 			name: "Company Logo",
 			delay: 1,
-			logo: "/src/assets/images/CompanyLogo-21.png",
+			logo: CompanyLogo21,
 		},
 		{
 			id: "logo-22",
 			name: "Company Logo",
 			delay: 1.05,
-			logo: "/src/assets/images/CompanyLogo-22.png",
+			logo: CompanyLogo22,
 		},
 		{
 			id: "logo-23",
 			name: "Company Logo",
 			delay: 1.1,
-			logo: "/src/assets/images/CompanyLogo-23.png",
+			logo: CompanyLogo23,
 		},
 	];
 
 	// Show only first 19 logos on desktop initially
 	const visiblePartners = showAllLogos ? partners : partners.slice(0, 19);
-	// const remainingCount = partners.length - 19;
+			// const remainingCount = partners.length - 19;
 
 	return (
 		<section
