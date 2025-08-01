@@ -10,209 +10,52 @@ export function FinalCTASection() {
     offset: ["start end", "end start"]
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const floatingElementsY = useTransform(scrollYProgress, [0, 1], ["0%", "-30%"]);
   const y = useTransform(scrollYProgress, [0, 1], [50, -50]);
 
   return (
-    <section ref={ref} className="pt-16 md:pt-24 lg:pt-32 pb-8 md:pb-20 lg:pb-32 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
-      {/* Enhanced Dynamic Background */}
+    <section ref={ref} className="pt-16 md:pt-24 lg:pt-32 pb-8 md:pb-20 lg:pb-32 text-white relative overflow-hidden">
+      {/* Subtle Animated Gradient Background */}
       <motion.div 
         className="absolute inset-0"
-        style={{ y: backgroundY }}
-      >
-        {/* Animated Grid */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[size:40px_40px] opacity-40"></div>
-        
-        {/* Dynamic Floating Elements */}
-        <motion.div 
-          className="absolute inset-0"
-          style={{ y: floatingElementsY }}
-        >
-          {/* Large floating circles with enhanced animation */}
-          <motion.div 
-            className="absolute top-20 left-20 w-64 h-64 border border-white/20 rounded-full"
-            animate={{ 
-              rotate: 360,
-              scale: [1, 1.2, 1],
-              opacity: [0.3, 0.6, 0.3]
-            }}
-            transition={{ 
-              rotate: { duration: 25, repeat: Infinity, ease: "linear" },
-              scale: { duration: 8, repeat: Infinity, ease: "easeInOut" },
-              opacity: { duration: 6, repeat: Infinity, ease: "easeInOut" }
-            }}
-          />
-          <motion.div 
-            className="absolute top-40 right-32 w-48 h-48 border border-white/15 rounded-full"
-            animate={{ 
-              rotate: -360,
-              scale: [1, 0.8, 1],
-              x: [0, 30, 0]
-            }}
-            transition={{ 
-              rotate: { duration: 20, repeat: Infinity, ease: "linear" },
-              scale: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-              x: { duration: 10, repeat: Infinity, ease: "easeInOut" }
-            }}
-          />
-          <motion.div 
-            className="absolute bottom-32 left-1/4 w-80 h-80 border border-white/10 rounded-full"
-            animate={{ 
-              rotate: 360,
-              y: [0, -40, 0],
-              opacity: [0.2, 0.5, 0.2]
-            }}
-            transition={{ 
-              rotate: { duration: 30, repeat: Infinity, ease: "linear" },
-              y: { duration: 12, repeat: Infinity, ease: "easeInOut" },
-              opacity: { duration: 8, repeat: Infinity, ease: "easeInOut" }
-            }}
-          />
-          <motion.div 
-            className="absolute bottom-20 right-20 w-56 h-56 border border-white/25 rounded-full"
-            animate={{ 
-              rotate: -360,
-              scale: [1, 1.3, 1],
-              x: [0, -25, 0]
-            }}
-            transition={{ 
-              rotate: { duration: 18, repeat: Infinity, ease: "linear" },
-              scale: { duration: 7, repeat: Infinity, ease: "easeInOut" },
-              x: { duration: 9, repeat: Infinity, ease: "easeInOut" }
-            }}
-          />
-          
-          {/* Additional smaller elements */}
-          <motion.div 
-            className="absolute top-1/3 left-1/3 w-32 h-32 border border-white/30 rounded-full"
-            animate={{ 
-              scale: [1, 1.4, 1],
-              opacity: [0.4, 0.8, 0.4],
-              rotate: 360
-            }}
-            transition={{ 
-              scale: { duration: 5, repeat: Infinity, ease: "easeInOut" },
-              opacity: { duration: 4, repeat: Infinity, ease: "easeInOut" },
-              rotate: { duration: 15, repeat: Infinity, ease: "linear" }
-            }}
-          />
-          <motion.div 
-            className="absolute top-2/3 right-1/3 w-40 h-40 border border-white/20 rounded-full"
-            animate={{ 
-              y: [0, 35, 0],
-              x: [0, 20, 0],
-              opacity: [0.3, 0.7, 0.3]
-            }}
-            transition={{ 
-              y: { duration: 8, repeat: Infinity, ease: "easeInOut" },
-              x: { duration: 6, repeat: Infinity, ease: "easeInOut" },
-              opacity: { duration: 5, repeat: Infinity, ease: "easeInOut" }
-            }}
-          />
-        </motion.div>
+        style={{
+          background: `radial-gradient(144.26% 62.31% at 62.48% 114.49%, #1A1A6D 0%, #111 100%)`,
+        }}
+        animate={{
+          background: [
+            `radial-gradient(144.26% 62.31% at 62.48% 114.49%, #1A1A6D 0%, #111 100%)`,
+            `radial-gradient(144.26% 62.31% at 65% 110%, #1A1A6D 0%, #111 100%)`,
+            `radial-gradient(144.26% 62.31% at 60% 118%, #1A1A6D 0%, #111 100%)`,
+            `radial-gradient(144.26% 62.31% at 62.48% 114.49%, #1A1A6D 0%, #111 100%)`
+          ]
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
 
-        {/* Flowing Lines with Enhanced Animation */}
-        <svg className="absolute inset-0 w-full h-full opacity-30" viewBox="0 0 1000 1000">
-          <motion.path
-            d="M0,500 Q250,300 500,500 T1000,500"
-            stroke="url(#gradient1)"
-            strokeWidth="3"
-            fill="none"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ 
-              pathLength: [0, 1, 0], 
-              opacity: [0, 1, 0] 
-            }}
-            transition={{ 
-              duration: 6, 
-              repeat: Infinity, 
-              ease: "easeInOut",
-              repeatDelay: 2
-            }}
-          />
-          <motion.path
-            d="M0,300 Q300,100 600,300 T1000,300"
-            stroke="url(#gradient2)"
-            strokeWidth="2"
-            fill="none"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ 
-              pathLength: [0, 1, 0], 
-              opacity: [0, 0.8, 0] 
-            }}
-            transition={{ 
-              duration: 7, 
-              repeat: Infinity, 
-              ease: "easeInOut",
-              delay: 2,
-              repeatDelay: 3
-            }}
-          />
-          <motion.path
-            d="M0,700 Q400,500 800,700 T1000,700"
-            stroke="url(#gradient3)"
-            strokeWidth="2.5"
-            fill="none"
-            initial={{ pathLength: 0, opacity: 0 }}
-            animate={{ 
-              pathLength: [0, 1, 0], 
-              opacity: [0, 0.9, 0] 
-            }}
-            transition={{ 
-              duration: 8, 
-              repeat: Infinity, 
-              ease: "easeInOut",
-              delay: 4,
-              repeatDelay: 1
-            }}
-          />
-          <defs>
-            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
-              <stop offset="50%" stopColor="rgba(255, 255, 255, 0.8)" />
-              <stop offset="100%" stopColor="rgba(255, 255, 255, 0)" />
-            </linearGradient>
-            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
-              <stop offset="50%" stopColor="rgba(255, 255, 255, 0.6)" />
-              <stop offset="100%" stopColor="rgba(255, 255, 255, 0)" />
-            </linearGradient>
-            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="rgba(255, 255, 255, 0)" />
-              <stop offset="50%" stopColor="rgba(255, 255, 255, 0.7)" />
-              <stop offset="100%" stopColor="rgba(255, 255, 255, 0)" />
-            </linearGradient>
-          </defs>
-        </svg>
-
-        {/* Pulsing Light Effects */}
-        <motion.div 
-          className="absolute top-1/4 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl"
-          animate={{ 
-            scale: [1, 1.5, 1],
-            opacity: [0.3, 0.6, 0.3]
-          }}
-          transition={{ 
-            duration: 10, 
-            repeat: Infinity, 
-            ease: "easeInOut" 
-          }}
-        />
-        <motion.div 
-          className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-white/3 rounded-full blur-3xl"
-          animate={{ 
-            scale: [1, 1.3, 1],
-            opacity: [0.2, 0.5, 0.2]
-          }}
-          transition={{ 
-            duration: 8, 
-            repeat: Infinity, 
-            ease: "easeInOut",
-            delay: 3
-          }}
-        />
-      </motion.div>
+      {/* Subtle Moving Overlay for Extra Depth */}
+      <motion.div 
+        className="absolute inset-0 opacity-60"
+        style={{
+          background: `radial-gradient(120% 50% at 50% 50%, rgba(26, 26, 109, 0.3) 0%, transparent 70%)`,
+        }}
+        animate={{
+          background: [
+            `radial-gradient(120% 50% at 50% 50%, rgba(26, 26, 109, 0.3) 0%, transparent 70%)`,
+            `radial-gradient(120% 50% at 45% 55%, rgba(26, 26, 109, 0.4) 0%, transparent 70%)`,
+            `radial-gradient(120% 50% at 55% 45%, rgba(26, 26, 109, 0.2) 0%, transparent 70%)`,
+            `radial-gradient(120% 50% at 50% 50%, rgba(26, 26, 109, 0.3) 0%, transparent 70%)`
+          ]
+        }}
+        transition={{
+          duration: 8,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2
+        }}
+      />
 
       {/* Main Content */}
       <motion.div 
@@ -288,22 +131,97 @@ export function FinalCTASection() {
             transition={{ duration: 0.4, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            {["Join", "the", "future", "of", "biopharma.", "Start", "today."].map((word, index) => (
-              <motion.span
-                key={index}
-                className="inline-block mr-1.5 md:mr-2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.2, 
-                  delay: 0.5 + (index * 0.02),
-                  ease: "easeOut"
-                }}
-                viewport={{ once: true }}
-              >
-                {word}
-              </motion.span>
-            ))}
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.5,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              Join
+            </motion.span>
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.52,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              the
+            </motion.span>
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.54,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              future
+            </motion.span>
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.56,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              of
+            </motion.span>
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.58,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              biopharma.
+            </motion.span>
+            <motion.span
+              className="inline-block mr-1.5 md:mr-2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.6,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              Start
+            </motion.span>
+            <motion.span
+              className="inline-block"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.2, 
+                delay: 0.62,
+                ease: "easeOut"
+              }}
+              viewport={{ once: true }}
+            >
+              today.
+            </motion.span>
           </motion.div>
           
           {/* Enhanced CTA Button - FASTER */}
@@ -326,7 +244,7 @@ export function FinalCTASection() {
               <Button 
                 size="lg" 
                 className="bg-white text-black hover:bg-gray-100 text-xl md:text-2xl px-12 py-4 h-auto font-semibold tracking-subtitle shadow-2xl rounded-full"
-                onClick={() => window.location.hash = "request-demo"}
+                onClick={() => { window.location.hash = "request-demo"; }}
               >
                 <span>Request a Demo</span>
                 <motion.div
@@ -389,9 +307,6 @@ export function FinalCTASection() {
           </motion.div>
         </motion.div>
       </motion.div>
-
-      {/* Ambient Light Effect */}
-      <div className="absolute inset-0 bg-gradient-radial from-white/10 via-transparent to-transparent opacity-50"></div>
     </section>
   );
 }

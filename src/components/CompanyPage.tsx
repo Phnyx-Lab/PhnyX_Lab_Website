@@ -7,8 +7,8 @@ import { CompanyCTASection } from "./company/CompanyCTASection";
 export function CompanyPage() {
   return (
     <div className="min-h-screen bg-white pt-20 md:pt-16">
-      <CompanyStorySection />
-      <CompanyTechnologySection />
+      {/* <CompanyStorySection /> */}
+      {/* <CompanyTechnologySection /> */}
       <CompanyTeamSection />
       <CompanyCTASection />
       <Footer />
