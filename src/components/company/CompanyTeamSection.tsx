@@ -2,6 +2,11 @@ import { MapPin } from "lucide-react";
 import { ImageWithFallback } from "../figma/ImageWithFallback";
 import LinkedinIcon from "@/src/assets/svg/LinkedinIcon";
 
+// Import team member images
+import MinseokImage from "../../assets/images/Minseok.png";
+import JasonImage from "../../assets/images/Jason.png";
+import HarshitImage from "../../assets/images/Harshit.png";
+
 export function CompanyTeamSection() {
 	const coFounders = [
 		{
@@ -9,7 +14,7 @@ export function CompanyTeamSection() {
 			role: "CEO & Co-Founder",
 			education: "B.S. & M.S. in CS, Stanford University",
 			description: "",
-			image: "/src/assets/images/minseok.png",
+			image: MinseokImage,
 			linkedin: "https://www.linkedin.com/in/minseok-bae-236955244/",
 		},
 		{
@@ -18,7 +23,7 @@ export function CompanyTeamSection() {
 			education: "B.S. in Mathematics, M.S. in CS, Stanford University",
 			achievements: "2x USAMO Qualifier",
 			description: "",
-			image: "/src/assets/images/jason.png",
+			image: JasonImage,
 			linkedin: "https://www.linkedin.com/in/jpark26/",
 		},
 		{
@@ -27,7 +32,7 @@ export function CompanyTeamSection() {
 			education: "B.S. in CS, IIT Bombay; M.S. in CS, Stanford University",
 			achievements: "Gold Medalist, Indian Physics Olympiad",
 			description: "",
-			image: "/src/assets/images/harshit.png",
+			image: HarshitImage,
 			linkedin: "https://www.linkedin.com/in/harshitgupta412/",
 		},
 	];

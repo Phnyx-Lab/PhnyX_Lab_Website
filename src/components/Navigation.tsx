@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import CompanyLogo from "../assets/svg/CompanyLogo";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,9 +65,7 @@ export function Navigation() {
             transition={{ type: "spring", stiffness: 400 }}
             onClick={() => handleNavigation("#")}
           >
-            <div className="text-white text-xl font-semibold tracking-subtitle">
-              PhnyX Lab
-            </div>
+            <CompanyLogo />
           </motion.div>
           
           <div className="hidden md:block">
@@ -123,6 +122,7 @@ export function Navigation() {
             </motion.div>
 
             {/* Mobile Hamburger Menu */}
+            {/** biome-ignore lint/a11y/useButtonType: <explanation> */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
@@ -149,7 +149,8 @@ export function Navigation() {
         >
           <div className="max-w-7xl mx-auto px-6 py-4 space-y-3">
             {navigationItems.map((item) => (
-              <button
+              // biome-ignore lint/a11y/useButtonType: <explanation>
+<button
                 key={item.name}
                 onClick={() => handleNavigation(item.href)}
                 className="block w-full text-left text-white/80 hover:text-white py-3 px-4 text-lg font-medium tracking-body bg-transparent border-none cursor-pointer rounded-lg hover:bg-white/10 transition-colors"

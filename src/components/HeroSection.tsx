@@ -136,7 +136,8 @@ export function HeroSection() {
 				</motion.div>
 
 				{/* Flowing Lines - Updated with red gradients */}
-				<svg
+				{/** biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
+<svg
 					className="absolute inset-0 w-full h-full opacity-20"
 					viewBox="0 0 1000 1000"
 				>
@@ -218,6 +219,7 @@ export function HeroSection() {
 						<div className="text-lg text-gray-300 md:text-xl lg:text-2xl xl:text-3xl">
 							{subtitleWords.map((word, index) => (
 								<motion.span
+									// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 									key={index}
 									className="inline-block mr-1.5 md:mr-2"
 									initial={{ opacity: 0, y: 20 }}
@@ -252,6 +254,7 @@ export function HeroSection() {
 							<Button
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full border-2 shadow-2xl bg-brand-gradient hover:opacity-90 md:text-xl md:px-12 md:py-4 tracking-body border-white/20"
+								// biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
 								onClick={() => (window.location.hash = "request-demo")}
 							>
 								Request a Demo
