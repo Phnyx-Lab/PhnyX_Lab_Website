@@ -1,5 +1,5 @@
 import { Footer } from "./Footer";
-import { ArrowRight, Calendar, Clock, Share, User } from "lucide-react";
+import { ArrowRight, Calendar, Clock, User } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { FinalCTASection } from "./FinalCTASection";
@@ -13,14 +13,14 @@ export function NewsroomPage() {
 		category: "Company News",
 		featured: true,
 		title:
-			"PhnyX Lab Raises $50M Series B to Accelerate AI-Driven Drug Discovery",
+			"Yoo Chang-ho, head of strategy at SK Biopharmaceuticals, left, and Bae Min-seok, CEO of PhnyX Lab, pose for a commemorative photo marking the signing of a memorandum of understanding on AI-based drug development at the SK Biopharmaceuticals booth during BIO USA 2025 on June 17. [SK BIOPHARMACEUTICALS]",
+		author: "KIM MIN-YOUNG",
 		excerpt:
-			"New funding will support global expansion and development of next-generation AI models for pharmaceutical research and development.",
-		author: "PhnyX Lab Team",
-		date: "12/15/2024",
+			"SK Biopharmaceuticals signed a memorandum of understanding with PhnyX Lab, a U.S.-based AI startup backed by SK Networks, to establish an AI-powered drug development framework.",
+		date: "06/17/2025",
 		readTime: "5 min read",
-		image:
-			"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=800&q=80",
+		image: news4,
+		link: "https://koreajoongangdaily.joins.com/news/2025-06-18/business/industry/SK-Biopharma-inks-MOU-with-PhnyX-Lab-to-creat-AIpowered-drug-development-framework/2332928",
 	};
 
 	const recentUpdates = [
@@ -34,16 +34,16 @@ export function NewsroomPage() {
 			image: news2,
 			link: "https://www.mk.co.kr/en/it/11362804",
 		},
-		{
-			title:
-				"Yoo Chang-ho, head of strategy at SK Biopharmaceuticals, left, and Bae Min-seok, CEO of PhnyX Lab, pose for a commemorative photo marking the signing of a memorandum of understanding on AI-based drug development at the SK Biopharmaceuticals booth during BIO USA 2025 on June 17. [SK BIOPHARMACEUTICALS]",
-			excerpt:
-				"SK Biopharmaceuticals signed a memorandum of understanding with PhnyX Lab, a U.S.-based AI startup backed by SK Networks, to establish an AI-powered drug development framework.",
-			date: "06/17/2025",
-			readTime: "4 min read",
-			image: news4,
-			link: "https://koreajoongangdaily.joins.com/news/2025-06-18/business/industry/SK-Biopharma-inks-MOU-with-PhnyX-Lab-to-creat-AIpowered-drug-development-framework/2332928",
-		},
+		// {
+		// 	title:
+		// 		"Yoo Chang-ho, head of strategy at SK Biopharmaceuticals, left, and Bae Min-seok, CEO of PhnyX Lab, pose for a commemorative photo marking the signing of a memorandum of understanding on AI-based drug development at the SK Biopharmaceuticals booth during BIO USA 2025 on June 17. [SK BIOPHARMACEUTICALS]",
+		// 	excerpt:
+		// 		"SK Biopharmaceuticals signed a memorandum of understanding with PhnyX Lab, a U.S.-based AI startup backed by SK Networks, to establish an AI-powered drug development framework.",
+		// 	date: "06/17/2025",
+		// 	readTime: "4 min read",
+		// 	image: news4,
+		// 	link: "https://koreajoongangdaily.joins.com/news/2025-06-18/business/industry/SK-Biopharma-inks-MOU-with-PhnyX-Lab-to-creat-AIpowered-drug-development-framework/2332928",
+		// },
 		{
 			title:
 				"작년 12월 간담회에서 국내사와 협업 이야기를 언급하며 진행 중인 사항이 있다고 했습니다. 현재 진행되는 회사들과 협업 단계는 어느 정도 진척 되었는지 질문드립니다.",
@@ -92,7 +92,7 @@ export function NewsroomPage() {
 									</span>
 								</div>
 
-								<h2 className="mb-6 text-3xl font-bold leading-tight text-black md:text-4xl tracking-title">
+								<h2 className="mb-6 text-3xl font-bold leading-tight text-black md:text-4xl tracking-title line-clamp-4">
 									{featuredStory.title}
 								</h2>
 
@@ -122,18 +122,29 @@ export function NewsroomPage() {
 								</div>
 
 								<div className="flex gap-4 items-center">
-									<Button className="px-6 py-3 h-auto font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 tracking-subtitle">
+									<Button
+										className="px-6 py-3 h-auto font-bold text-white bg-red-600 rounded-lg hover:bg-red-700 tracking-subtitle"
+										onClick={() => {
+											if (featuredStory.link) {
+												window.open(
+													featuredStory.link,
+													"_blank",
+													"noopener,noreferrer",
+												);
+											}
+										}}
+									>
 										Read Full Story
 										<ArrowRight className="ml-2 w-4 h-4" />
 									</Button>
 
-									<Button
+									{/* <Button
 										variant="outline"
 										className="px-6 py-3 h-auto font-medium text-gray-700 bg-white rounded-lg border-gray-300 hover:bg-gray-50 hover:border-gray-400 tracking-body"
 									>
 										<Share className="mr-2 w-4 h-4" />
 										Share
-									</Button>
+									</Button> */}
 								</div>
 							</div>
 
