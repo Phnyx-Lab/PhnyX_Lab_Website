@@ -270,12 +270,12 @@ export function HeroSection() {
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full backdrop-blur-sm border-white/60 bg-white/5 hover:bg-white/15 hover:border-white md:text-xl md:px-12 md:py-4 tracking-body"
 							>
-								<motion.span
+								{/* <motion.span
 									animate={{ opacity: [1, 0.7, 1] }}
 									transition={{ duration: 2, repeat: Infinity }}
 								>
 									▶
-								</motion.span>
+								</motion.span> */}
 								<a
 									href="https://cheiron.phnyx.ai"
 									target="_blank"
