@@ -1,5 +1,6 @@
 /** biome-ignore-all lint/a11y/useValidAnchor: Social media links use external URLs */
 import { Linkedin, Mail } from "lucide-react";
+import CompanyLogo from "../assets/svg/CompanyLogo";
 
 export function Footer() {
 	const footerLinks = [
@@ -70,12 +71,12 @@ export function Footer() {
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(147,51,234,0.1)_0%,transparent_50%)]"></div>
 			</div>
 
-			<div className="relative z-10 px-6 mx-auto max-w-7xl lg:px-8 mt-20">
+			<div className="relative z-10 px-6 mx-auto mt-20 max-w-7xl lg:px-8">
 				<div className="grid gap-12 mb-16 md:grid-cols-4">
 					{/* Brand Section */}
 					<div>
 						<div className="mb-6 text-2xl font-bold tracking-subtitle">
-							PhnyX Lab
+							<CompanyLogo />
 						</div>
 						<p className="mb-8 text-gray-400 leading-relaxed-plus tracking-body">
 							Redefining biopharma workflow through AI-powered solutions.
