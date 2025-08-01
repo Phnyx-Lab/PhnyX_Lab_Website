@@ -1,3 +1,4 @@
+/** biome-ignore-all lint/a11y/useValidAnchor: Social media links use external URLs */
 import { Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
@@ -52,19 +53,24 @@ export function Footer() {
 			href: "https://www.linkedin.com/company/phnyx-lab/",
 			name: "LinkedIn",
 		},
-		{ Icon: XIcon, href: "https://x.com/phnyx21695", name: "X" },
+		{ Icon: XIcon, href: "https://x.com/phnyx_lab", name: "X" },
 		{ Icon: Mail, href: "mailto:contact@phnyx.ai", name: "Email" },
 	];
 
 	return (
 		<footer className="overflow-hidden relative text-white bg-black section-spacing">
+			{/* Short Top Border */}
+			<div className="flex justify-center mb-12">
+				<div className="w-4/5 h-px bg-white/30"></div>
+			</div>
+
 			{/* Background Elements */}
 			<div className="absolute inset-0 opacity-20">
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
 				<div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(147,51,234,0.1)_0%,transparent_50%)]"></div>
 			</div>
 
-			<div className="relative z-10 px-6 mx-auto max-w-7xl lg:px-8">
+			<div className="relative z-10 px-6 mx-auto max-w-7xl lg:px-8 mt-20">
 				<div className="grid gap-12 mb-16 md:grid-cols-4">
 					{/* Brand Section */}
 					<div>
