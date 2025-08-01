@@ -1,12 +1,12 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import {
-	categories,
+	// categories,
 	testimonialsByCategory,
 } from "./testimonials/testimonialData";
 import { TestimonialCard } from "./testimonials/TestimonialCard";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
-import { Button } from "./ui/button";
+// import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+// import { Button } from "./ui/button";
 
 export function TestimonialsSection() {
 	const ref = useRef(null);
@@ -22,42 +22,40 @@ export function TestimonialsSection() {
 		[0.5, 1, 1, 0.5],
 	);
 
-	const [activeCategory, setActiveCategory] = useState("All");
-	const [isPlaying, setIsPlaying] = useState(true);
+	// const [activeCategory, setActiveCategory] = useState("All");
+	// const [isPlaying, setIsPlaying] = useState(true);
 	const [currentOffset, setCurrentOffset] = useState(0);
 
 	const currentTestimonials =
-		testimonialsByCategory[
-			activeCategory as keyof typeof testimonialsByCategory
-		];
+		testimonialsByCategory["All" as keyof typeof testimonialsByCategory];
 
 	// Auto-play functionality
 	useEffect(() => {
-		if (!isPlaying) return;
+		// if (!isPlaying) return;
 
 		const interval = setInterval(() => {
 			setCurrentOffset((prev) => prev - 1);
 		}, 50); // Smooth continuous movement
 
 		return () => clearInterval(interval);
-	}, [isPlaying]);
+	}, []); // [isPlaying]
 
 	// Reset when category changes
-	useEffect(() => {
-		setCurrentOffset(0);
-	}, [activeCategory]);
+	// useEffect(() => {
+	// 	setCurrentOffset(0);
+	// }, [activeCategory]);
 
-	const handlePrevious = () => {
-		setCurrentOffset((prev) => prev + 50); // Move cards forward
-	};
+	// const handlePrevious = () => {
+	// 	setCurrentOffset((prev) => prev + 50); // Move cards forward
+	// };
 
-	const handleNext = () => {
-		setCurrentOffset((prev) => prev - 50); // Move cards backward
-	};
+	// const handleNext = () => {
+	// 	setCurrentOffset((prev) => prev - 50); // Move cards backward
+	// };
 
-	const togglePlayPause = () => {
-		setIsPlaying(!isPlaying);
-	};
+	// const togglePlayPause = () => {
+	// 	setIsPlaying(!isPlaying);
+	// };
 
 	return (
 		<section
@@ -138,7 +136,6 @@ export function TestimonialsSection() {
 				<div className="relative">
 					<div className="overflow-hidden">
 						<motion.div
-							key={activeCategory}
 							className="flex gap-8"
 							animate={{
 								x: currentOffset,
@@ -153,7 +150,7 @@ export function TestimonialsSection() {
 							{Array.from({ length: 6 }, (_, setIndex) =>
 								currentTestimonials.map((testimonial, index) => (
 									<TestimonialCard
-										key={`${activeCategory}-set${setIndex}-${index}`}
+										key={`set${setIndex}-${index}-${testimonial.company}`}
 										testimonial={testimonial}
 									/>
 								)),
