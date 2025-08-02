@@ -95,10 +95,10 @@ export function ProblemSolutionSection() {
 	// Text Rotator for the main question - Include "?" in rotation
 	const [currentTextIndex, setCurrentTextIndex] = useState(0);
 	const rotatingTexts = [
-		{ duration: "20%", activity: "information search?" },
+		{ duration: "50%", activity: "information search?" },
 		{ duration: "25%", activity: "document review?" },
 		{ duration: "30%", activity: "data validation?" },
-		{ duration: "15%", activity: "regulatory writing?" },
+		{ duration: "40%", activity: "regulatory writing?" },
 	];
 
 	// Mobile rotating texts - simpler version
