@@ -76,7 +76,7 @@ export default function App() {
 		switch (currentPage) {
 			case "products":
 				return {
-					title: "Cheiron AI Platform - Products | PhnyX Lab",
+					title: "PhnyX Lab",
 					description:
 						"Advanced biopharma AI platform featuring Cheiron Finder and Write - revolutionary pharmaceutical AI tools for intelligent literature review, regulatory document automation, and clinical research. Enterprise-grade AI for drug discovery.",
 					keywords:
@@ -86,7 +86,7 @@ export default function App() {
 				};
 			case "company":
 				return {
-					title: "About PhnyX Lab - Company Story & Team",
+					title: "PhnyX Lab",
 					description:
 						"Leading biopharma AI company revolutionizing pharmaceutical research. PhnyX Lab's journey from SK Networks AI initiative to independent biotech AI pioneer, transforming drug discovery with cutting-edge artificial intelligence solutions.",
 					keywords:
@@ -96,7 +96,7 @@ export default function App() {
 				};
 			case "newsroom":
 				return {
-					title: "News & Insights - PhnyX Lab Newsroom",
+					title: "PhnyX Lab",
 					description:
 						"Latest biopharma AI news, pharmaceutical technology insights, and drug discovery innovations from PhnyX Lab. Stay updated on cutting-edge AI developments transforming pharmaceutical research and clinical trials.",
 					keywords:
@@ -106,7 +106,7 @@ export default function App() {
 
 			case "request-demo":
 				return {
-					title: "Contact Us - PhnyX Lab",
+					title: "PhnyX Lab",
 					description:
 						"Get in touch with PhnyX Lab to discover how Cheiron AI can revolutionize your biopharma workflows. Schedule a personalized demo of our pharmaceutical AI platform and transform your drug discovery process.",
 					keywords:
@@ -115,7 +115,7 @@ export default function App() {
 				};
 			case "thank-you":
 				return {
-					title: "Thank You - PhnyX Lab",
+					title: "PhnyX Lab",
 					description:
 						"Thank you for your interest in PhnyX Lab. Our team will contact you within 24 hours to discuss how Cheiron can help your organization.",
 					canonicalUrl: "https://phnyx.ai/thank-you",
