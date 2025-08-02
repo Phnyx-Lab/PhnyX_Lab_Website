@@ -137,7 +137,7 @@ export function HeroSection() {
 
 				{/* Flowing Lines - Updated with red gradients */}
 				{/** biome-ignore lint/a11y/noSvgWithoutTitle: <explanation> */}
-<svg
+				<svg
 					className="absolute inset-0 w-full h-full opacity-20"
 					viewBox="0 0 1000 1000"
 				>
@@ -255,9 +255,14 @@ export function HeroSection() {
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full border-2 shadow-2xl bg-brand-gradient hover:opacity-90 md:text-xl md:px-12 md:py-4 tracking-body border-white/20"
 								// biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
-								onClick={() => (window.location.hash = "request-demo")}
 							>
-								Request a Demo
+								<a
+									href="https://cheiron.phnyx.ai"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Try Cheiron
+								</a>
 							</Button>
 						</motion.div>
 
@@ -273,6 +278,9 @@ export function HeroSection() {
 								variant="outline"
 								size="lg"
 								className="px-10 py-3 h-auto text-lg font-medium text-white rounded-full backdrop-blur-sm border-white/60 bg-white/5 hover:bg-white/15 hover:border-white md:text-xl md:px-12 md:py-4 tracking-body"
+								onClick={() => {
+									window.location.hash = "company";
+								}}
 							>
 								{/* <motion.span
 									animate={{ opacity: [1, 0.7, 1] }}
@@ -280,13 +288,7 @@ export function HeroSection() {
 								>
 									▶
 								</motion.span> */}
-								<a
-									href="https://cheiron.phnyx.ai"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Try Cheiron
-								</a>
+								About Us
 							</Button>
 						</motion.div>
 					</motion.div>
