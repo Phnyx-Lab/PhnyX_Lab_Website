@@ -1,48 +1,48 @@
 import { ChevronDown } from "lucide-react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+// import { useEffect, useState } from "react";
 
 // Counter component for animating numbers
-function AnimatedCounter({
-	value,
-	suffix = "",
-	delay = 0,
-}: {
-	value: number;
-	suffix?: string;
-	delay?: number;
-}) {
-	const motionValue = useMotionValue(0);
-	const springValue = useSpring(motionValue, { damping: 60, stiffness: 100 });
-	const [displayValue, setDisplayValue] = useState(0);
+// function AnimatedCounter({
+// 	value,
+// 	suffix = "",
+// 	delay = 0,
+// }: {
+// 	value: number;
+// 	suffix?: string;
+// 	delay?: number;
+// }) {
+// 	const motionValue = useMotionValue(0);
+// 	const springValue = useSpring(motionValue, { damping: 60, stiffness: 100 });
+// 	const [displayValue, setDisplayValue] = useState(0);
 
-	useEffect(() => {
-		const unsubscribe = springValue.onChange(setDisplayValue);
-		return unsubscribe;
-	}, [springValue]);
+// 	useEffect(() => {
+// 		const unsubscribe = springValue.onChange(setDisplayValue);
+// 		return unsubscribe;
+// 	}, [springValue]);
 
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			motionValue.set(value);
-		}, delay);
+// 	useEffect(() => {
+// 		const timer = setTimeout(() => {
+// 			motionValue.set(value);
+// 		}, delay);
 
-		return () => clearTimeout(timer);
-	}, [motionValue, value, delay]);
+// 		return () => clearTimeout(timer);
+// 	}, [motionValue, value, delay]);
 
-	return (
-		<span>
-			{Math.round(displayValue * 10) / 10}
-			{suffix}
-		</span>
-	);
-}
+// 	return (
+// 		<span>
+// 			{Math.round(displayValue * 10) / 10}
+// 			{suffix}
+// 		</span>
+// 	);
+// }
 
 export function ProductHeroSection() {
-	const [isVisible, setIsVisible] = useState(false);
+	// const [isVisible, setIsVisible] = useState(false);
 
-	useEffect(() => {
-		setIsVisible(true);
-	}, []);
+	// useEffect(() => {
+	// 	setIsVisible(true);
+	// }, []);
 
 	const scrollToSection = (sectionId: string) => {
 		const element = document.getElementById(sectionId);
