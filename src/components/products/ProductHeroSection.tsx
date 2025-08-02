@@ -62,11 +62,11 @@ export function ProductHeroSection() {
 			title: "Cheiron Write",
 			description: "Document Assistant",
 		},
-		{
-			id: "enterprise-security",
-			title: "About Our Security",
-			description: "Enterprise-Grade Protection",
-		},
+		// {
+		// 	id: "enterprise-security",
+		// 	title: "About Our Security",
+		// 	description: "Enterprise-Grade Protection",
+		// },
 	];
 
 	return (
@@ -122,7 +122,7 @@ export function ProductHeroSection() {
 						</div>
 
 						{/* Key Statistics - Clean grid layout with animation */}
-						<motion.div
+						{/* <motion.div
 							className="grid grid-cols-3 gap-6"
 							initial={{ opacity: 0, y: 50 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -177,7 +177,7 @@ export function ProductHeroSection() {
 									</div>
 								</motion.div>
 							))}
-						</motion.div>
+						</motion.div> */}
 					</div>
 
 					{/* Right Navigation - Minimal design with horizontal lines and animation */}
