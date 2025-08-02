@@ -364,11 +364,11 @@ export function ProblemSolutionSection() {
 				>
 					<h2 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl tracking-title leading-title">
 						{/* See Cheiron’s pharmaceutical answer engine in action: */}
-						See Cheiron’s{" "}
+						See{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-red-400">
-							pharmaceutical answer engine
+							Cheiron Search
 						</span>{" "}
-						in action:
+						in Action
 					</h2>
 				</motion.div>
 

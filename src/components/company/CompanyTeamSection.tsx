@@ -12,7 +12,7 @@ export function CompanyTeamSection() {
 		{
 			name: "Minseok Bae",
 			role: "CEO & Co-Founder",
-			education: "B.S. & M.S. in CS, Stanford University",
+			education: "",
 			description: "",
 			image: MinseokImage,
 			linkedin: "https://www.linkedin.com/in/minseok-bae-236955244/",
@@ -20,8 +20,8 @@ export function CompanyTeamSection() {
 		{
 			name: "Jason Park",
 			role: "CPO & Co-Founder",
-			education: "B.S. in Mathematics, M.S. in CS, Stanford University",
-			achievements: "2x USAMO Qualifier",
+			education: "",
+			achievements: "",
 			description: "",
 			image: JasonImage,
 			linkedin: "https://www.linkedin.com/in/jpark26/",
@@ -29,8 +29,8 @@ export function CompanyTeamSection() {
 		{
 			name: "Harshit Gupta",
 			role: "CTO & Co-Founder",
-			education: "B.S. in CS, IIT Bombay; M.S. in CS, Stanford University",
-			achievements: "Gold Medalist, Indian Physics Olympiad",
+			education: "",
+			achievements: "",
 			description: "",
 			image: HarshitImage,
 			linkedin: "https://www.linkedin.com/in/harshitgupta412/",
@@ -74,11 +74,12 @@ export function CompanyTeamSection() {
 				{/* Header */}
 				<div className="mb-20 text-center">
 					<h2 className="mb-8 text-4xl font-bold text-black md:text-6xl lg:text-7xl xl:text-8xl tracking-hero leading-hero">
-					Our Mission
+						Our Mission
 					</h2>
 
 					<p className="mx-auto max-w-4xl text-xl text-gray-600 md:text-2xl tracking-body leading-body font-condensed">
-					To transform the knowledge layer of pharma—automating the most complex, {' '}
+						To transform the knowledge layer of pharma—automating the most
+						complex,{" "}
 						<span className="font-semibold text-gray-900">
 							overlooked workflows with GenAI.
 						</span>

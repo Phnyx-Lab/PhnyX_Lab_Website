@@ -122,7 +122,7 @@ export default function App() {
 				};
 			default:
 				return {
-					title: "PhnyX Lab - AI Toolkit for Modern Biopharma",
+					title: "PhnyX Lab",
 					description:
 						"Leading biopharma AI platform transforming pharmaceutical workflows with intelligent document automation, AI-powered literature review, and regulatory writing tools. Reduce drug discovery research time by 80% with Cheiron AI.",
 					keywords:
