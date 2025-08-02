@@ -1,6 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Clock, Database, AlertTriangle, Zap, FileText } from "lucide-react";
+import {
+	Clock,
+	Database,
+	AlertTriangle,
+	Zap,
+	FileText,
+	ArrowRight,
+} from "lucide-react";
 import { useRef, useState, useEffect } from "react";
+import { Button } from "./ui/button";
 
 export function ProblemSolutionSection() {
 	const ref = useRef(null);
@@ -364,11 +372,11 @@ export function ProblemSolutionSection() {
 				>
 					<h2 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-6xl xl:text-7xl tracking-title leading-title">
 						{/* See Cheiron’s pharmaceutical answer engine in action: */}
-						See{" "}
+						Try{" "}
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-red-400">
 							Cheiron Search
 						</span>{" "}
-						in Action
+						{/* in Action */}
 					</h2>
 				</motion.div>
 
@@ -395,21 +403,38 @@ export function ProblemSolutionSection() {
 						viewport={{ once: false, amount: 0.2 }}
 						style={{
 							aspectRatio: "16/9",
-							width: "80vw",
-							maxWidth: "1200px",
+							width: "220px",
+							height: "50px",
+							// maxWidth: "50px",
 							margin: "0 auto",
 							transform: "scale(1.02)",
 							marginBottom: "100px",
 						}}
 					>
-						<iframe
+						<div className="text-center">
+							<Button
+								size="lg"
+								className="px-12 py-4 h-auto text-xl font-bold text-white bg-red-600 shadow-lg hover:bg-red-700 tracking-subtitle"
+								onClick={() => {
+									window.open(
+										"https://cheiron.phnyx.ai/",
+										"_blank",
+										"noopener",
+									);
+								}}
+							>
+								Try Cheiron Search
+								<ArrowRight className="ml-3 w-6 h-6" />
+							</Button>
+						</div>
+						{/* <iframe
 							className="w-full h-full border-none"
 							src="https://www.youtube.com/embed/y34ozFW7FI8?si=jEo4cMvSNVMTa-Ku"
 							title="YouTube video player"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
-						></iframe>
+						></iframe> */}
 						{/* <motion.div
 							className="flex relative justify-center items-center w-full h-full"
 							initial={{ opacity: 0.9 }}
