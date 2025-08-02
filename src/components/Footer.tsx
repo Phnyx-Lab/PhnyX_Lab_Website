@@ -124,7 +124,7 @@ export function Footer() {
 						<p className="text-sm text-gray-400 tracking-body">
 							© 2025 PhnyX Lab. All rights reserved.
 						</p>
-						<div className="flex mt-4 space-x-6 md:mt-0">
+						{/* <div className="flex mt-4 space-x-6 md:mt-0">
 							{["Privacy Policy", "Terms of Service"].map((item) => (
 								<a
 									key={item}
@@ -134,7 +134,7 @@ export function Footer() {
 									{item}
 								</a>
 							))}
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
